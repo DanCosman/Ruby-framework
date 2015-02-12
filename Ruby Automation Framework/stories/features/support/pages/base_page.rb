@@ -14,14 +14,14 @@ class BasePage
 
   # This class contains the common actions which are used in multiple pages
 
-  def initialize(browser, visit = false)
-    super(browser, visit)
-    wait_until(5, 'correct page not loaded') { page_loaded_element.exists? }
-  end
-
-  def current_page?
-    page_loaded_element.exists?
-  end
+  # def initialize(browser, visit = false)
+  #   super(browser, visit)
+  #   wait_until(5, 'correct page not loaded') { page_loaded_element.exists? }
+  # end
+  #
+  # def current_page?
+  #   page_loaded_element.exists?
+  # end
 
 
 end

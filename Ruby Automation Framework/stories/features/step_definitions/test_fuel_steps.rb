@@ -1,5 +1,5 @@
 Given(/^I access the homepage$/) do
-  (visit Homepage)
+  (on Homepage).something
 end
 
 Then(/^I should be able to see the homepage$/) do
