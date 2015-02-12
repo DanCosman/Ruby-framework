@@ -6,6 +6,8 @@ require 'headless'
 require 'page-object'
 require 'page-object/page_factory'
 require 'active_support/all'
+require 'minitest'
+require 'minitest/autorun'
 
 # Test development and debugging gems
 require 'pry'

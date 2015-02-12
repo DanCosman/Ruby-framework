@@ -1,18 +1,22 @@
 # Before each scenario, except headless and manual ones
 
 # Set up browser
-b = 'HEADLESS' # default to firefox
-b = ENV['HEADLESS'] unless ENV['HEADLESS'].nil?
+b = 'firefox' # default to firefox
+b = ENV['BROWSER'] unless ENV['BROWSER'].nil?
 
-browser = Headless.new(b.to_sym)
+
+Headless.ly do
+  # browser = Watir::Browser.new(b.to_sym)
+   browser = Watir::Browser.new :ff
+end
 
 
 Before('~@headless', '~@manual') do
 
   @browser = browser
-  browser.window.maximize
-      #resize_to(1300, 600)
-  browser.cookies.clear
+  # browser.window.maximize
+  #     #resize_to(1300, 600)
+  # browser.cookies.clear
 end
 
 # After each scenario, except headless and manual ones
