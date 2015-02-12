@@ -1,8 +1,8 @@
 # Before each scenario, except headless and manual ones
 
 # Set up browser
-b = 'firefox' # default to firefox
-b = ENV['BROWSER'] unless ENV['BROWSER'].nil?
+b = 'HEADLESS' # default to firefox
+b = ENV['HEADLESS'] unless ENV['HEADLESS'].nil?
 
 browser = Headless.new(b.to_sym)
 
