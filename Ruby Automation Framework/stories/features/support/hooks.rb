@@ -4,7 +4,7 @@
 b = 'firefox' # default to firefox
 b = ENV['BROWSER'] unless ENV['BROWSER'].nil?
 
-browser = Headless.new
+browser = Headless.new(b.to_sym)
 
 
 Before('~@headless', '~@manual') do
