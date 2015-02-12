@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Test" skipped="0" tests="1" time="0.022016">
+<testcase classname="Test" name="Test" time="0.022016">
+  <failure message="failed Test" type="failed">
+    <![CDATA[Scenario: Test
+
+Given I access the homepage
+Then I should be able to see the homepage
+
+Message:
+]]>
+    <![CDATA[Unable to pick a platform for the provided browser (RuntimeError)
+./features/support/pages/base_page.rb:18:in `initialize'
+./features/step_definitions/test_fuel_steps.rb:2:in `/^I access the homepage$/'
+D:\Personal\personal work\Ruby Empty framework\Ruby Automation Framework\stories\features\features\test_fuel.feature:4:in `Given I access the homepage']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>
