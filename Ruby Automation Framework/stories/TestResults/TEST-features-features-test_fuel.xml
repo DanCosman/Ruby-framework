@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="Test" skipped="0" tests="1" time="0.578946">
+<testcase classname="Test" name="Test" time="0.578946">
+  <failure message="failed Test" type="failed">
+    <![CDATA[Scenario: Test
+
+Given I access the homepage
+Then I should be able to see the homepage
+
+Message:
+]]>
+    <![CDATA[end of file reached (EOFError)
+C:/Ruby193/lib/ruby/1.9.1/net/protocol.rb:141:in `read_nonblock'
+C:/Ruby193/lib/ruby/1.9.1/net/protocol.rb:141:in `rbuf_fill'
+C:/Ruby193/lib/ruby/1.9.1/net/protocol.rb:122:in `readuntil'
+C:/Ruby193/lib/ruby/1.9.1/net/protocol.rb:132:in `readline'
+C:/Ruby193/lib/ruby/1.9.1/net/http.rb:2563:in `read_status_line'
+C:/Ruby193/lib/ruby/1.9.1/net/http.rb:2552:in `read_new'
+C:/Ruby193/lib/ruby/1.9.1/net/http.rb:1320:in `block in transport_request'
+C:/Ruby193/lib/ruby/1.9.1/net/http.rb:1317:in `catch'
+C:/Ruby193/lib/ruby/1.9.1/net/http.rb:1317:in `transport_request'
+C:/Ruby193/lib/ruby/1.9.1/net/http.rb:1294:in `request'
+C:/Ruby193/lib/ruby/1.9.1/net/http.rb:1287:in `block in request'
+C:/Ruby193/lib/ruby/1.9.1/net/http.rb:746:in `start'
+C:/Ruby193/lib/ruby/1.9.1/net/http.rb:1285:in `request'
+./features/support/pages/base_page.rb:18:in `initialize'
+./features/step_definitions/test_fuel_steps.rb:2:in `/^I access the homepage$/'
+features\features\test_fuel.feature:4:in `Given I access the homepage']]>
+  </failure>
+  <system-out/>
+  <system-err/>
+</testcase>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testsuite>

@@ -4,9 +4,11 @@
 b = 'firefox' # default to firefox
 b = ENV['BROWSER'] unless ENV['BROWSER'].nil?
 
-browser = Watir::Browser.new(b.to_sym)
+browser = Headless.new
+
 
 Before('~@headless', '~@manual') do
+
   @browser = browser
   browser.window.maximize
       #resize_to(1300, 600)
